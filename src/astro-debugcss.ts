@@ -5,7 +5,7 @@ export default {
 	init(canvas: ShadowRoot, eventTarget: any) {
 		eventTarget.addEventListener('app-toggled', (event: { detail: { state: boolean; }; }) => {
 			if (event.detail.state === true) {
-				window.localStorage.setItem('debugcss', 'true');
+				// window.localStorage.setItem('debugcss', 'true');
 				const headElement = document.head
 				const styleElement = document.createElement('style')
 				styleElement.setAttribute('debug-css', '')
